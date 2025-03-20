@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>trailers</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="https://www.emoji.co.uk/files/phantom-open-emojis/smileys-people-phantom/13172-skull.png" type="image/png">
+  <script src="script.js"></script>
+</head>
+<body bgcolor="black" onload="playScarySound()">
+  <audio id="background-music" loop>
+    <source src="https://www.soundjay.com/human/sounds/heartbeat-01a.mp3" type="audio/mpeg">
+  </audio>
+  
+  <div class="fog-container">
+    <div class="fog"></div>
+    <div class="fog fog2"></div>
+  </div>
+  
+  <div class="titulo-retangulo titulo-vermelho">
+    <h1 class="horror-text">vamos conhecer alguns filmes de terror</h1>
+  </div>
+  
+  <script>
+    function playScarySound() {
+      const audio = document.getElementById('background-music');
+      audio.volume = 0.3;
+      audio.play();
+      
+      // Adiciona efeito de piscar aleatoriamente
+      setInterval(() => {
+        if(Math.random() > 0.97) {
+          document.body.style.backgroundColor = "#300";
+          setTimeout(() => {
+            document.body.style.backgroundColor = "black";
+          }, 100);
+        }
+      }, 1000);
+    }
+  </script>
+
+  <h3 style="color:darkorange;">Alguns dos melhores filmes de terror</h3
+
+ <ol>
+   <li style="color:gold;">A Noite do Terror (1978)</li>
+   <p style="color:red;">Sinopse: O filme segue Michael Myers, um assassino que, aos seis anos, matou sua irmã mais velha na noite de Halloween. Quinze anos depois, ele escapa de um hospital psiquiátrico e retorna à sua cidade natal, Haddonfield, para continuar sua onda de assassinatos. A jovem Laurie Strode (interpretada por Jamie Lee Curtis) e seus amigos se tornam os novos alvos de Michael, enquanto o Dr. Sam Loomis (interpretado por Donald Pleasence) tenta detê-lo.</p>
+   <img src="noite do terror.jpeg" alt="noite do terror" width="400" height="300">
+   
+   <li style="color:gold;">Pânico(1996)</li>
+   <p style="color:red;">Sidney Prescott (Neve Campbell) começa a desconfiar que a morte de dois estudantes está relacionada com o falecimento da sua mãe, há cerca de um ano. Enquanto isso, os jovens da pacata cidadezinha começam a receber ligações de um maníaco que faz perguntas sobre filmes de horror. Quem erra, morre. As perguntas seguem uma lógica que será desvendada numa grande festa escolar.</p>
+  <img src="panico.jpeg" alt="panico" width="400" height="300"> 
+   
+   <li style="color:gold;">Terrifier</li>
+  <p style="color:red;"> Em Terrifier, um programa de televisão passa. Nele, um repórter entrevista uma mulher gravemente desfigurada, a única sobrevivente de um massacre ocorrido no Halloween anterior. Brown menciona que o corpo do assassino, conhecido apenas como "Art the Clown", desapareceu do necrotério. Na véspera do Halloween, as garotas Dawn (Catherine Corcoran) e Tara (Jenna Kanell) procuram a melhor festa da cidade. Mas, em vez de passar a noite com álcool e garotos bonitos, eles vivenciam o momento mais cruel de suas vidas. Quando param em uma pequena lanchonete e pedem uma selfie ao palhaço Art (David Howard Thornton), Dawn e Tara não suspeitam de nenhum mal. Mas quando as jovens encontram o homem mascarado assustador novamente naquela mesma noite, o horror começa. Porque Art é um palhaço assassino - e tem suas próximas vítimas em vista...</p>
+   <img src="terrifier.jpeg" alt="Terrifier" width="400" height="300">
+   
+   <li style="color:gold;">Deixa Ela Entrar (2008)</li>
+   <p style="color:red;"> Oskar, um menino de 12 anos solitário e frequentemente intimidado por seus colegas de escola, vive nos subúrbios de Estocolmo. Sua vida muda quando ele conhece Eli, uma misteriosa garota que se muda para o apartamento ao lado. Conforme os dois se tornam amigos, Oskar descobre que Eli é uma vampira. Enquanto tenta entender e aceitar a verdadeira natureza de Eli, uma série de eventos sinistros começa a ocorrer na vizinhança, forçando-os a confrontar suas próprias realidades e os perigos que os cercam.</p>
+  <img src="deixa ela entrar.jpg" alt="deixa ela entrar" width="400" height="300">
+   
+   <li style="color:gold;">Annabelle</li>
+<p style="color:red;">Em Anabelle, John (Ward Horton) encontrou o presente perfeito para sua futura esposa, Mia (Annabelle Wallis): uma rara boneca antiga com um lindo vestido. Mia fica bastante contente com seu presente, porém, sua animação com a boneca não duraria muito tempo. Certa noite, sua casa é invadida por membros de uma seita satânica que, buscando completar um ritual, atacam violentamente o casal. Após derramarem sangue, os cultistas são detidos. O que o casal não contava é que, mesmo depois de um tempo, as consequências dessa invasão continuariam a aterrorizar suas vidas, principalmente quando ocorrências sobrenaturais, envolvendo a boneca, passam a permear a vida de Mia.</p>
+   <img src="anabelli.jpeg" alt="Annabelle" width="400" height="300">
+   
+   <li style="color:gold;">O Exorcista do Papa</li>
+   <p style="color:red;">Inspirado nos arquivos reais do Padre Gabriele Amorth, Chefe Exorcista do Vaticano. O padre realizou mais de 100.000 exorcismos em sua vida e faleceu em 2016 aos 91 anos. Amorth escreveu duas memórias – An Exorcist Tells His Story e An Exorcist: More Stories – e detalhou suas experiências lutando contra Satanás e demônios que agarraram e possuíram as pessoas com seu mal. O filme, sendo o retrato do personagem da vida real, acompanha Amorth (Russell Crowe) enquanto ele investiga a terrível possessão de um menino e acaba descobrindo uma conspiração secular que o Vaticano tentou desesperadamente proteger e manter no esquecimento.</p>
+   <img src="papa.jfif" alt="o exorcista do papa" width="400" height="300">
+   
+   <li style="color:gold;">abigail</li>
+   <p style="color:red;">Em Abigail, um peculiar grupo de criminosos aceita mais um típico trabalho. Dessa vez, a proposta é sequestrar uma bailarina de doze anos, que também é filha de um dos mais poderosos homens do submundo. Enquanto o contratante do grupo pede um resgate de 50 milhões de dólares para o pai da garota, o grupo só precisa observar a criança por uma noite em uma mansão isolada. No entanto, quando os raptores começam a desaparecer, um por um, logo descobrem da pior forma que estão trancados dentro de casa com uma garotinha nada normal.</p>
+   <img src="abigail.jfif" alt="abigail" width="400" height="300">
+     
+   <li style="color:gold;">Corra! (2017)</li>
+   <p style="color:red;">O filme “Corra” está na lista de um dos melhores filmes de terror de todos os tempos com um roteiro de terror psicológico. Chris Washington, um jovem fotógrafo afro-americano, viaja com sua namorada branca, Rose Armitage, para conhecer seus pais em uma casa de campo. No início, Chris percebe o comportamento excessivamente acolhedor dos Armitage como tentativas nervosas de lidar com o relacionamento interracial da filha. No entanto, à medida que o fim de semana avança, uma série de descobertas perturbadoras revela uma verdade aterradora. Chris logo descobre que ele é a mais recente vítima de um plano sinistro envolvendo hipnose e manipulação mental.</p>
+   <img src="corra.jfif" alt="corra" width="400" height="300">
+   
+   <li style="color:gold;">You</li>
+   <p style="color:red;">A história acompanha Joe, um gerente de livrarias que conhece uma aspirante a escritora e usa a internet e as mídias sociais como ferramentas para reunir as informações pessoais para se aproximar dela e também para fazer a mulher dos seus sonhos se apaixonar por ele.
+     <img src="you.jfif" alt="you" width="400" height="300">
+ </ol>
+ <p><a href="trailers.html" style="color:darkorange;font-size:24px;"> trailers </a></p>
+</body>
+</html>

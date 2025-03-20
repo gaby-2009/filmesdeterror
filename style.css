@@ -1,0 +1,299 @@
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Creepster&display=swap');
+
+body {
+  font-family: 'Creepster', cursive;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #1a1a1a;
+  color: #f0f0f0;
+  font-size: 18px;
+}
+
+h1 {
+  color: #ff0000;
+  text-align: center;
+  font-family: 'Creepster', cursive;
+  font-size: 3em;
+  letter-spacing: 2px;
+}
+
+h2, h3 {
+  color: #ff6600;
+  font-family: 'Creepster', cursive;
+  font-size: 1.8em;
+}
+
+/* Container para agrupar vídeos */
+.videos-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.video-container {
+  display:flex; /* Usando flexbox */
+  justify-content:space-between;/* Espaço entre os vídeos */
+}
+.video-containervideo{
+  width:45%;/* Largura dos vídeos */
+  heigth:auto;/* Mantém a proporção do video */
+}
+
+.video-container {
+  display:flex; /* Usando flexbox */
+  justify-content:space-between;/* Espaço entre os vídeos */
+}
+.video-containervideo{
+  width:45%;/* Largura dos vídeos */
+  heigth:auto;/* Mantém a proporção do video */
+}
+
+a {
+  color: #ff4500;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+p {
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #ff0000;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+  border: 2px solid #ff0000;
+  border-radius: 5px;
+  transition: transform 0.3s;
+}
+
+img:hover {
+  transform: scale(1.05);
+  filter: drop-shadow(0 0 10px #ff0000);
+  animation: tremor 0.3s infinite;
+}
+
+@keyframes tremor {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  25% { transform: translate(2px, 2px) rotate(1deg); }
+  50% { transform: translate(0, -2px) rotate(0deg); }
+  75% { transform: translate(-2px, 0) rotate(-1deg); }
+  100% { transform: translate(0, 0) rotate(0deg); }
+}
+
+@keyframes sangue {
+  0% { text-shadow: 0 0 10px #ff0000; }
+  50% { text-shadow: 0 0 20px #ff0000, 0 0 30px #ff0000; }
+  100% { text-shadow: 0 0 10px #ff0000; }
+}
+
+h1, h2, h3 {
+  animation: sangue 3s infinite;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #ff0000;
+  animation: tremor 0.2s infinite;
+}
+
+/* Efeito de cursor personalizado */
+body {
+  cursor: url('https://cur.cursors-4u.net/symbols/sym-1/sym46.cur'), auto;
+}
+
+/* Gotejamento de sangue no topo da página */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 10px;
+  background: linear-gradient(to right, #800000, #ff0000, #800000);
+  animation: gotejar 5s infinite;
+  z-index: 9999;
+}
+
+@keyframes gotejar {
+  0%, 100% { height: 10px; }
+  50% { height: 15px; }
+}
+
+marquee {
+  background-color: #300;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.espaco-colorido {
+  background-color: #300; /* Vermelho escuro */
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(255, 0, 0, 0.3);
+}
+
+/* Variações de cores para espaços diferentes */
+.espaco-vermelho { background-color: #500; }
+.espaco-laranja { background-color: #930; }
+.espaco-roxo { background-color: #408; }
+.espaco-verde { background-color: #050; }
+
+/* Estilo para título com retângulo colorido */
+.titulo-retangulo {
+  background-color: #500; /* Vermelho escuro */
+  border: 3px solid #f00; /* Borda vermelha */
+  padding: 15px;
+  margin: 15px 0;
+  border-radius: 8px;
+  display: inline-block;
+  box-shadow: 0 4px 8px rgba(255, 0, 0, 0.5);
+}
+
+/* Variações de cores para títulos */
+.titulo-vermelho { background-color: #500; border-color: #f00; }
+.titulo-laranja { background-color: #930; border-color: #f80; }
+.titulo-roxo { background-color: #408; border-color: #90f; }
+.titulo-roxo-claro { background-color: #609; border-color: #c0f; }
+.titulo-verde { background-color: #050; border-color: #0f0; }
+
+/* Estilo especial para a página de filmes de crianças */
+body[bgcolor="#e6ccff"] h2 {
+  color: #650080;
+}
+
+/* Estilo para o título roxo claro */
+body[bgcolor="#e6ccff"] .titulo-roxo h1 {
+  color: #cc99ff;
+}
+
+/* Efeito de névoa */
+.fog-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.fog {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background: url('https://raw.githubusercontent.com/danielstuart14/CSS_FOG_ANIMATION/master/fog.png') repeat-x;
+  background-size: contain;
+  opacity: 0.3;
+  animation: moveFog 60s linear infinite;
+}
+
+.fog2 {
+  opacity: 0.2;
+  animation: moveFog 40s linear infinite;
+  animation-delay: -10s;
+}
+
+@keyframes moveFog {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Texto de horror com efeito de sangue */
+.horror-text {
+  position: relative;
+  color: #ff0000;
+  text-shadow: 
+    0 0 10px #800000,
+    0 0 20px #800000,
+    0 0 30px #ff0000;
+}
+
+.horror-text::before {
+  content: attr(class);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: transparent;
+  background-image: linear-gradient(transparent 60%, rgba(255, 0, 0, 0.1) 70%, rgba(255, 0, 0, 0.3) 90%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  z-index: -1;
+}
+
+/* Efeito de sangue nas bordas */
+.espaco-colorido {
+  border: 2px solid #800000;
+  position: relative;
+}
+
+.espaco-colorido::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 30%;
+  width: 20px;
+  height: 20px;
+  background: radial-gradient(circle, #ff0000 0%, transparent 70%);
+  border-radius: 50%;
+  opacity: 0.7;
+}
+
+/* Estilo para links mais assustadores */
+a {
+  position: relative;
+  transition: all 0.3s;
+}
+
+a::before {
+  content: "🔪";
+  position: absolute;
+  opacity: 0;
+  left: -20px;
+  transition: all 0.3s;
+}
+
+a:hover::before {
+  opacity: 1;
+  left: -25px;
+}
+
+/* Scrollbar assustadora */
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #800000;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff0000;
+}
+
